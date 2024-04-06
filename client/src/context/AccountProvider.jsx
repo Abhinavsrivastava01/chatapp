@@ -16,7 +16,7 @@ const AccountProvider = ({children}) => {
     const socket = useRef();
 
     useEffect(() => {
-        socket.current = io('ws://abhinav.eastus.cloudapp.azure.com:9000');
+        socket.current = io('ws://chatappsocket.abhinavsrivastava.tech');
     }, [])
 
     return (
